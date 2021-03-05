@@ -112,7 +112,7 @@ class BiliGiftRouter(object):
         -----------
         guard_msg: The message which bilibili_api send to the callback.
         """
-        user_name = guard_msg['data']['data']['uname']
+        user_name = guard_msg['data']['data']['username']
         guard_type = guard_msg['data']['data']['gift_name']
         guard_timestamp = guard_msg['data']['data']['start_time']
 
