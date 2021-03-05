@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 The Router to record gift message in Bilibili.com Live room to GTD Softwares.
 将 Bilibili 直播间中的礼物信息自动记录入 GTD 软件的转发器。

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Main Script to Run the App.
 运行 App 的主脚本。

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 GTD Manager abstract class for all the Managers.
 Author: caoyu-yiyue

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 Manager for Todoist.
 Author: caoyu-yiyue
