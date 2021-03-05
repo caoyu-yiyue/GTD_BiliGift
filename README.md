@@ -16,10 +16,10 @@
 3. 安装项目依赖。
 
     ```shell
-    pip install-r requirements.txt 
+    pip install -r requirements.txt 
     ```
 
-4. 在 `config.py` 文件中设置需要监控的直播间号、GTD 软件的 API 等配置信息，详细配置请见文件中的注释说明。可以同时配置多个 GTD 客户端接收礼物信息。
+4. 在 `config.py` 文件中设置需要记录的直播间号、GTD 软件的 API 等配置信息，详细配置请见文件中的注释说明。可以同时配置多个 GTD 客户端接收礼物信息。
 5. 打开 Mac OS 上的终端（Terminal）或 Windows 上的 CMD 或 Powershell，通过 `cd` 命令将路径移动到下载本项目的路径，然后运行 `main.py`，程序将自动运行。
 
     ```shell
@@ -52,5 +52,7 @@ finally:
 ```
 
 转发器内部使用异步 IO 提高性能，需要注意结束任务时合理关闭连接。
+
+---
 
 项目鸣谢： [bilibili-api](https://github.com/Passkou/bilibili-api)。
