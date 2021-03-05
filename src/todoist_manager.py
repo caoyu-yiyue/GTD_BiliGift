@@ -1,5 +1,7 @@
 """
 Manager for Todoist.
+Author: caoyu-yiyue
+Github URL: https://github.com/caoyu-yiyue/GTD_BiliGift/
 """
 from logging import warning
 import uuid

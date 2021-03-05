@@ -1,6 +1,8 @@
 """
 Saving Use Configs.
 保存用户设置的各类信息
+Author: caoyu-yiyue
+Github URL: https://github.com/caoyu-yiyue/GTD_BiliGift/
 """
 config = {
     # The bilibili live room id, Can find it in url。B 站直播间号，可以在直播间的 url 中找到。

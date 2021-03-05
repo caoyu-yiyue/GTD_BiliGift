@@ -1,6 +1,8 @@
 """
 The Router to record gift message in Bilibili.com Live room to GTD Softwares.
 将 Bilibili 直播间中的礼物信息自动记录入 GTD 软件的转发器。
+Author: caoyu-yiyue
+Github URL: https://github.com/caoyu-yiyue/GTD_BiliGift/
 """
 import asyncio
 from datetime import datetime

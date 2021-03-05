@@ -1,6 +1,8 @@
 """
 Main Script to Run the App.
 运行 App 的主脚本。
+Author: caoyu-yiyue
+Github URL: https://github.com/caoyu-yiyue/GTD_BiliGift/
 """
 from src.gift_router import BiliGiftRouter
 from config import config
