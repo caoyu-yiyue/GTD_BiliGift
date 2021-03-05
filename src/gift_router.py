@@ -132,7 +132,7 @@ class BiliGiftRouter(object):
         Parameters:
         sc_msg: The message which bilibili_api send to the callback.
         """
-        user_name = sc_msg['data']['data']['use_info']['uname']
+        user_name = sc_msg['data']['data']['user_info']['uname']
         sc_content = sc_msg['data']['data']['message']
         sc_content_jp = sc_msg['data']['data'].get('message_jpn', '')
         sc_timestamp = sc_msg['data']['data']['start_time']
