@@ -94,7 +94,7 @@ class BiliGiftRouter(object):
         user_name = gift_msg['data']['data']['uname']
         gift_timestamp = gift_msg['data']['data']['timestamp']
 
-        gtd_msg = '【{}】赠送的【{}】'.format(user_name, gift_name)
+        gtd_msg = '🎁【{}】赠送的【{}】'.format(user_name, gift_name)
         gtd_date = datetime.fromtimestamp(gift_timestamp)
         gtd_due_str = gtd_date.strftime('%Y-%m-%d')
 
@@ -116,7 +116,7 @@ class BiliGiftRouter(object):
         guard_type = guard_msg['data']['data']['gift_name']
         guard_timestamp = guard_msg['data']['data']['start_time']
 
-        gtd_msg = '【{}】上了【{}】'.format(user_name, guard_type)
+        gtd_msg = '🚢【{}】上了【{}】'.format(user_name, guard_type)
         gtd_date = datetime.fromtimestamp(guard_timestamp)
         gtd_due_str = gtd_date.strftime('%Y-%m-%d')
 
@@ -135,14 +135,13 @@ class BiliGiftRouter(object):
         user_name = sc_msg['data']['data']['user_info']['uname']
         sc_content = sc_msg['data']['data']['message']
         sc_content_jp = sc_msg['data']['data'].get('message_jpn', '')
+        sc_price = sc_msg['data']['data']['price']
         sc_timestamp = sc_msg['data']['data']['start_time']
 
+        gtd_msg = '💬【{}】的 SC({})：{}'.format(user_name, sc_price, sc_content)
         if sc_content_jp:
             # sc_msg sent jp trans.
-            gtd_msg = 'SC｜【{}】：{}｜{}'.format(user_name, sc_content,
-                                             sc_content_jp)
-        else:
-            gtd_msg = 'SC｜【{}】：{}'.format(user_name, sc_content)
+            gtd_msg += '｜{}'.format(sc_content_jp)
         gtd_date = datetime.fromtimestamp(sc_timestamp)
         gtd_due_str = gtd_date.strftime('%Y-%m-%d')
 
