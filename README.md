@@ -44,7 +44,7 @@ gtd_manager = TodoistManager(token=<API Token>, gift_projcet_name="Bilibili Gift
 gift_router.add_gtd_managers([gtd_manager]) # 添加 GTD 管理器，可以是 list 或单个对象。
 gift_router.set_gift_filter({'辣条'})  # 添加无需记录的礼物名称。
 try:
-    gift_router.start(tranlate_sc=config['translate_sc'])   # 开始任务，并指定是否需要记录 SC 的日语翻译。
+    gift_router.start(tranlate_sc=False)   # 开始任务，并指定是否需要记录 SC 的日语翻译。
 except KeyboardInterrupt:
     print('End Connection.')
 finally:
