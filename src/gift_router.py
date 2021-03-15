@@ -88,13 +88,15 @@ class BiliGiftRouter(object):
         -----------
         gift_msg: The message which bilibili_api send to the callback.
         """
-        gift_name = gift_msg['data']['data']['giftName']
+        gift_data = gift_msg['data']['data']
+        gift_name = gift_data['giftName']
         if gift_name in self.__gift_filter:
             return
-        user_name = gift_msg['data']['data']['uname']
-        gift_timestamp = gift_msg['data']['data']['timestamp']
+        user_name = gift_data['uname']
+        gift_num = gift_data['num']
+        gift_timestamp = gift_data['timestamp']
 
-        gtd_msg = '🎁【{}】赠送的【{}】'.format(user_name, gift_name)
+        gtd_msg = '🎁【{}】赠送的 {} 个【{}】'.format(user_name, gift_num, gift_name)
         gtd_date = datetime.fromtimestamp(gift_timestamp)
         gtd_due_str = gtd_date.strftime('%Y-%m-%d')
 
